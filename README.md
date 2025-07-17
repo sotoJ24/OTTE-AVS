@@ -18,16 +18,7 @@ The OTTE AVS aims to provide a **decentralized, cryptographically verifiable, an
   
 otte-avs/
 ├── contracts/                           # Smart contracts
-│   ├── src/
-│   │   ├── TimeTriggerRegistry.sol     # Task registration contract
-│   │   ├── TimeTriggerManager.sol      # Execution management
-│   │   └── interfaces/
-│   │       └── ITimeTrigger.sol        # Core interfaces
-│   ├── script/
-│   │   └── DeployOTTE.s.sol           # Deployment script
-│   ├── test/
-│   │   └── TimeTrigger.t.sol          # Basic contract tests
-│   └── foundry.toml                    # Foundry configuration                      
+                  
 
 
 
