@@ -14,7 +14,7 @@ Smart contracts are deterministic and cannot initiate actions on their own at a 
 
 The OTTE AVS aims to provide a **decentralized, cryptographically verifiable, and economically secure mechanism for scheduling arbitrary smart contract function calls** at precise future times or intervals.
 
-
+**Project Structure**
   
 otte-avs/         
 
