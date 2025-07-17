@@ -27,28 +27,9 @@ otte-avs/
 │   │   └── DeployOTTE.s.sol           # Deployment script
 │   ├── test/
 │   │   └── TimeTrigger.t.sol          # Basic contract tests
-│   └── foundry.toml                    # Foundry configuration
-├── operator/                           # Rust operator backend
-│   ├── src/
-│   │   ├── main.rs                    # Main operator entry point
-│   │   ├── task_listener.rs           # Monitor for new tasks
-│   │   ├── executor.rs                # Execute scheduled tasks
-│   │   ├── attester.rs                # Generate execution attestations
-│   │   └── types.rs                   # Common types and structs
-│   ├── config/
-│   │   └── config.yaml                # Operator configuration
-│   ├── Cargo.toml                     # Rust dependencies
-│   └── Cargo.lock                     # Dependency lock file
-├── attestation-center/                 # Task submission and verification
-│   ├── submit-task.js                 # Submit time-triggered tasks
-│   ├── verify-execution.js            # Verify task execution
-│   └── package.json                   # Node.js dependencies
-├── scripts/                           # Deployment and setup
-│   ├── deploy.sh                      # Contract deployment
-│   ├── register-operator.sh           # Operator registration
-│   └── demo-task.sh                   # Submit demo task
-├── .env.example                       # Environment configuration
-└── README.md                          # Project documentation
+│   └── foundry.toml                    # Foundry configuration                      
+
+
 
 #### **💡 The Novel Idea**
 
