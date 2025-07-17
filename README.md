@@ -14,6 +14,41 @@ Smart contracts are deterministic and cannot initiate actions on their own at a 
 
 The OTTE AVS aims to provide a **decentralized, cryptographically verifiable, and economically secure mechanism for scheduling arbitrary smart contract function calls** at precise future times or intervals.
 
+
+otte-avs/
+├── contracts/                           # Smart contracts
+│   ├── src/
+│   │   ├── TimeTriggerRegistry.sol     # Task registration contract
+│   │   ├── TimeTriggerManager.sol      # Execution management
+│   │   └── interfaces/
+│   │       └── ITimeTrigger.sol        # Core interfaces
+│   ├── script/
+│   │   └── DeployOTTE.s.sol           # Deployment script
+│   ├── test/
+│   │   └── TimeTrigger.t.sol          # Basic contract tests
+│   └── foundry.toml                    # Foundry configuration
+├── operator/                           # Rust operator backend
+│   ├── src/
+│   │   ├── main.rs                    # Main operator entry point
+│   │   ├── task_listener.rs           # Monitor for new tasks
+│   │   ├── executor.rs                # Execute scheduled tasks
+│   │   ├── attester.rs                # Generate execution attestations
+│   │   └── types.rs                   # Common types and structs
+│   ├── config/
+│   │   └── config.yaml                # Operator configuration
+│   ├── Cargo.toml                     # Rust dependencies
+│   └── Cargo.lock                     # Dependency lock file
+├── attestation-center/                 # Task submission and verification
+│   ├── submit-task.js                 # Submit time-triggered tasks
+│   ├── verify-execution.js            # Verify task execution
+│   └── package.json                   # Node.js dependencies
+├── scripts/                           # Deployment and setup
+│   ├── deploy.sh                      # Contract deployment
+│   ├── register-operator.sh           # Operator registration
+│   └── demo-task.sh                   # Submit demo task
+├── .env.example                       # Environment configuration
+└── README.md                          # Project documentation
+
 #### **💡 The Novel Idea**
 
 The OTTE AVS allows any smart contract or EOA to register a "time-triggered task" specifying:
