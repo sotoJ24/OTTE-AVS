@@ -16,9 +16,7 @@ The OTTE AVS aims to provide a **decentralized, cryptographically verifiable, an
 
 
   
-otte-avs/
-├── contracts/                           # Smart contracts
-                  
+otte-avs/         
 
 
 
